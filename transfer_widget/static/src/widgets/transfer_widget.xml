@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<template id="Transfer_Widget_template" xml:space="preserve">
+
+    <t t-name="transfer_widget.TransferWidget">
+        <a t-on-click="onTransferPopover" t-attf-class="fa fa-exchange"/>
+    </t>
+
+    <t t-name="transfer_widget.StockTransferWidget">
+        <div class="p-2">
+            <div>
+              <h2 class="o_popover_header" style="display: flex;">
+                Transfer Details
+              </h2>
+            </div>
+            <div>
+              <h5 class="o_popover_header">
+                <t t-esc="props.record.data.product_id['display_name']"/>
+              </h5>
+            </div>
+            <br/>
+                <table class="table table-sm" >
+                    <thead>
+                        <th><t t-esc="props.calcData[1][0]"/> </th>
+                        <th><t t-esc="props.calcData[1][1]"/> </th>
+                        <th><t t-esc="props.calcData[1][2]"/> </th>
+                        <th><t t-esc="props.calcData[1][3]"/> </th>
+                    </thead>
+                    <tbody>
+                        <tr t-foreach="props.calcData[0]" t-as="line" t-key="line.id" >
+                            <td t-on-click="onOpenTransfer"  t-att-data-id="line.id" t-att-data-model="line.model_name"> <t t-esc="line.ref"/> </td>
+                            <td><t t-esc="line.qty_1"/></td>
+                            <td><t t-esc="line.qty_2"/></td>
+                            <td ><t t-esc="line.name_2"/></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <button class="text-start btn btn-link" type="button" t-on-click="AllTransfer" t-att-data-ids="props.transfer_ids">
+                    <i class="oi oi-fw o_button_icon oi-arrow-right"></i>
+                    View ALL Transfers
+                </button>
+        </div>
+    </t>
+</template>
