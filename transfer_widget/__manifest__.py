@@ -14,6 +14,9 @@
             "transfer_widget/static/src/widgets/popover.css",
         ]
     },
+    "images": [
+        "static/description/banner.png"
+    ],
     'installable': True,
     'application': True,
     'auto_install': False,
