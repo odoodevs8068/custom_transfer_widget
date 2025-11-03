@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Product Transfer Quick View Widget — User Documentation</title>
+</head>
+<body style=" margin:0;
+      background:#f6f8fb;
+      color:#0f172a;
+      line-height:1.5;
+      -webkit-font-smoothing:antialiased;">
+  <div class="container" style="      max-width:980px;
+      margin:28px auto;
+      padding:22px;">
+    <div class="card" style="      background:var(--card);
+      border-radius:12px;
+      padding:22px;
+      box-shadow:0 6px 18px rgba(38,50,56,0.06);">
+      <div style="      display:flex;
+      align-items:center;
+      gap:16px;
+      margin-bottom:12px;">
+        <div class="logo " style="width:58px;background: linear-gradient(135deg, #2b7cff, #6ea8ff);
+              height:58px;
+              border-radius:10px;
+              display:flex;
+              align-items:center;
+              justify-content:center;
+              color:white;
+              font-weight:700;
+              font-size:18px;
+              box-shadow:0 6px 18px rgba(43,124,255,0.16);"> TW
+        </div>
+        <div>
+          <h1>Product Transfer Quick View Widget</h1>
+          <p class="lead" style="color:#6b7280; margin:6px 0 18px;">Business user guide — view product transfer details instantly from Sales, Purchase and Manufacturing lines.</p>
+        </div>
+      </div>
+
+      <!-- Purpose -->
+      <section style="margin-top:18px;" id="purpose">
+        <h2>Purpose</h2>
+        <p class="muted" style="color:#6b7280;font-size:14px;">
+          The Transfer Widget provides immediate visibility into stock transfers for each product line. Instead of switching to the Inventory app or searching manually, users can click the transfer icon next to a product and see related transfer references, quantities requested, and quantities reserved in a pop-up.
+        </p>
+      </section>
+
+      <!-- Usage -->
+      <section style="margin-top:18px;
+    " id="usage">
+        <h2>Usage (How to use)</h2>
+        <ol>
+          <li>Open a Sales Order, Purchase Order, or Manufacturing Order.</li>
+          <li>On each product line you will see a small transfer icon next to the delivered/received column.</li>
+          <li>Click the icon to open a pop-up that shows transfer information for that product: reference, demand quantity, reserved quantity and unit of measure.</li>
+          <li>Click a reference in the pop-up to open that specific transfer, or click <strong>View ALL Transfers</strong> to see the full list of related transfers.</li>
+        </ol>
+        <p class="muted" style="color:#6b7280;font-size:14px;">No extra navigation or search is required — everything opens from the same screen.</p>
+      </section>
+
+      <!-- Benefits -->
+      <section style="margin-top:18px;
+    " id="benefits">
+        <h2>Key Benefits</h2>
+        <ul class="benefits" style="padding-left:18px">
+          <li style="margin-bottom:8px"><strong>Instant visibility</strong> of transfers without leaving the order screen.</li>
+          <li style="margin-bottom:8px"><strong>Fewer clicks</strong> — reduces time spent moving between applications.</li>
+          <li style="margin-bottom:8px"><strong>Faster decision-making</strong> for Sales, Purchasing and Production teams thanks to immediate access to transfer status.</li>
+          <li style="margin-bottom:8px"><strong>Improved coordination</strong> between teams — everyone sees the same up-to-date transfer information.</li>
+          <li style="margin-bottom:8px"><strong>Lower risk of mistakes</strong> by showing reserved vs demanded quantities clearly.</li>
+        </ul>
+      </section>
+
+      <!-- Flow -->
+      <section style="margin-top:18px;
+    " id="flow">
+        <h2>Business Flow (what happens)</h2>
+        <div class="flow" style="      display:flex;
+      gap:14px;
+      flex-wrap:wrap;
+      margin-top:8px;" aria-hidden="true">
+          <div style="
+      flex:1 1 180px;
+      background:#eef6ff;
+      border-radius:10px;
+      padding:12px;
+      min-width:160px;
+      box-shadow:0 3px 8px rgba(12,18,30,0.03);
+    ">
+            <h3 style="margin:0;font-size:14px">1. Order created</h3>
+            <p style="color:#6b7280;font-size:14px;">A Sales / Purchase / Manufacturing order contains product lines.</p>
+          </div>
+          <div style="
+      flex:1 1 180px;
+      background:#eef6ff;
+      border-radius:10px;
+      padding:12px;
+      min-width:160px;
+      box-shadow:0 3px 8px rgba(12,18,30,0.03);
+    ">
+            <h3 style="margin:0;font-size:14px">2. Icon appears</h3>
+            <p style="color:#6b7280;font-size:14px;">Each product line shows a transfer icon for quick lookup.</p>
+          </div>
+          <div style="
+      flex:1 1 180px;
+      background:#eef6ff;
+      border-radius:10px;
+      padding:12px;
+      min-width:160px;
+      box-shadow:0 3px 8px rgba(12,18,30,0.03);
+    ">
+            <h3 style="margin:0;font-size:14px">3. Click to view</h3>
+            <p style="color:#6b7280;font-size:14px;">A pop-up shows transfer references, demanded & reserved quantities, and units.</p>
+          </div>
+          <div style="
+      flex:1 1 180px;
+      background:#eef6ff;
+      border-radius:10px;
+      padding:12px;
+      min-width:160px;
+      box-shadow:0 3px 8px rgba(12,18,30,0.03);
+    ">
+            <h3 style="margin:0;font-size:14px">4. Actions</h3>
+            <p style="color:#6b7280;font-size:14px;">Open a single transfer or view all transfers in a list.</p>
+          </div>
+        </div>
+
+        <h3 style="margin-top:16px">What the pop-up shows</h3>
+        <ul>
+          <li><strong>Reference:</strong> transfer name/number</li>
+          <li><strong>Demand:</strong> quantity requested on the move</li>
+          <li><strong>Reserved:</strong> quantity reserved on stock move lines</li>
+          <li><strong>Unit:</strong> unit of measure</li>
+        </ul>
+      </section>
+
+      <!-- Time saving -->
+      <section style="margin-top:18px;
+    " id="time_saving">
+        <h2>Time Saving & Efficiency Impact</h2>
+        <p style="color:#6b7280;font-size:14px;">Typical user activity before vs after installing the widget:</p>
+
+        <table aria-label="Time savings table" style="width:100%;border-collapse:collapse;margin-top:10px">
+          <thead>
+            <tr>
+              <th style="padding:8px;text-align:left;border-bottom:1px solid #eef2f7">Task</th>
+              <th style="padding:8px;text-align:left;border-bottom:1px solid #eef2f7">Before (approx)</th>
+              <th style="padding:8px;text-align:left;border-bottom:1px solid #eef2f7">After (approx)</th>
+              <th style="padding:8px;text-align:left;border-bottom:1px solid #eef2f7">Time saved</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td style="padding:8px;text-align:left;border-bottom:1px solid #eef2f7">Check a single product's transfer details</td>
+              <td style="padding:8px;text-align:left;border-bottom:1px solid #eef2f7"> 30–90 seconds (open Inventory → search → filter)</td>
+              <td style="padding:8px;text-align:left;border-bottom:1px solid #eef2f7">3–8 seconds (click icon → view pop-up)</td>
+              <td style="padding:8px;text-align:left;border-bottom:1px solid #eef2f7">~30–82 seconds</td>
+            </tr>
+            <tr>
+              <td style="padding:8px;text-align:left;border-bottom:1px solid #eef2f7">Review transfers for 10 product lines</td>
+              <td style="padding:8px;text-align:left;border-bottom:1px solid #eef2f7">5–15 minutes</td>
+              <td style="padding:8px;text-align:left;border-bottom:1px solid #eef2f7">1–2 minutes</td>
+              <td style="padding:8px;text-align:left;border-bottom:1px solid #eef2f7">~4–13 minutes</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="metrics" style="display:flex;
+      gap:12px;
+      margin-top:12px;
+      flex-wrap:wrap;">
+          <div class="metric" style="      background:#fff;
+      border-radius:10px;
+      padding:12px;
+      min-width:160px;
+      box-shadow:0 6px 16px rgba(9,30,66,0.04);">
+            <div style="color:#6b7280;font-size:14px;">Typical per-check saving</div>
+            <div style="font-weight:700;font-size:20px;color:#2b7cff">~30–60s</div>
+          </div>
+          <div class="metric" style="      background:#fff;
+      border-radius:10px;
+      padding:12px;
+      min-width:160px;
+      box-shadow:0 6px 16px rgba(9,30,66,0.04);">
+            <div style="color:#6b7280;font-size:14px;">Estimated weekly saving (busy user)</div>
+            <div style="font-weight:700;font-size:20px;color:#2b7cff">2–6 hours</div>
+          </div>
+        </div>
+
+        <p style="color:#6b7280;font-size:14px;" style="margin-top:10px">
+          Savings depend on volume of orders and frequency of transfer checks. High-volume operations will see larger cumulative benefits.
+        </p>
+      </section>
+
+      <!-- Template / ready to paste -->
+      <section style="margin-top:18px;" id="template">
+        <h2>Summary</h2>
+        <p style="color:#6b7280;font-size:14px;"></p>
+        <div style="background:#f3f6ff;border-radius:8px;padding:12px">
+          <strong>Product Transfer Quick View Widget</strong><br/>
+          The Transfer Widget shows transfers for each product line directly in Sales, Purchase and Manufacturing orders. Click the transfer icon to see references, demand and reserved quantities and open specific transfers or the full transfer list. This reduces navigation, speeds decisions and lowers mistakes. Ideal for teams that frequently check stock movements.
+        </div>
+      </section>
+
+      <!-- Call to action -->
+      <section style="display:flex;
+      gap:10px;
+      margin-top:16px;
+      align-items:center;" class="cta">
+        <a style="padding:10px 14px;
+      background:#2b7cff;
+      color:white;
+      border-radius:8px;
+      text-decoration:none;
+      font-weight:600;" href="#" onclick="window.print();return false;">Print / Save PDF</a>
+        <a class="background:#fff;color:#2b7cff;border:1px solid #dbe8ff" href="#usage">Jump to Usage</a>
+      </section>
+
+       <section class="text-center my-5">
+            <h2 style="color:#222;">Need Help?</h2>
+            <div class="d-flex flex-column align-items-center mt-4">
+              <a href="mailto:odoodevs8068@gmail.com" class="btn btn-dark mb-2" style="width:250px;">
+                <i class="fa fa-envelope mr-2"></i>Email Us
+              </a>
+              <a href="https://wa.me/966542273082" class="btn btn-success mb-2" style="width:250px;">
+                <i class="fa fa-whatsapp mr-2"></i>WhatsApp (KSA) 966 54227 3082
+              </a>
+              <a href="https://wa.me/919360353170" class="btn btn-success" style="width:250px;">
+                <i class="fa fa-whatsapp mr-2"></i>WhatsApp (India) 91 9360353170
+              </a>
+            </div>
+      </section>
+
+
+    </div>
+
+  </div>
+</body>
+</html>

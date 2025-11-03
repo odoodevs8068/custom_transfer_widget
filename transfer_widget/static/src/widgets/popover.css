@@ -1,0 +1,24 @@
+/* target the class passed via prop */
+.o_transfer_popover.transfer-popover {
+  min-width: 320px;
+  padding: 10px;
+  background: #ffffff;
+  border-radius: 6px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+  border: 1px solid #e6d7b8;
+   width: 25%;
+}
+
+/* optionally style inner elements */
+.o_transfer_popover .o_popover_header {
+  display: table-cell;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom:8px;
+  text-align: center;
+  font-weight: bold;
+  width: 100%;
+}
+
+.o_transfer_popover .o_popover_body ul { list-style:none; padding-left:0; margin:0; }
+.o_transfer_popover .o_popover_body li { margin:6px 0; }
